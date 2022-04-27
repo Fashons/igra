@@ -31,7 +31,6 @@ public class DoorScript : MonoBehaviour
                     {
                         open = true;
                         close = false;
-                        doorKey = false;
                     }
                 }
             }
@@ -66,17 +65,17 @@ public class DoorScript : MonoBehaviour
         {
             if (open)
             {
-                GUI.Box(new Rect(0, 0, 200, 25), "НЕ нажимай E чтобы закрыть");
+                GUI.Box(new Rect(400, 80, 200, 25), "Нажмите E чтобы закрыть");
             }
             else
             {
                 if (doorKey)
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "НЕ нажимай E чтобы открыть");
+                    GUI.Box(new Rect(400, 80, 200, 25), "Нажмите E чтобы открыть");
                 }
                 else
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "Ключ НЕ НУЖЕН");
+                    GUI.Box(new Rect(400, 80, 200, 25), "Нужен ключ");
                 }
             }
         }

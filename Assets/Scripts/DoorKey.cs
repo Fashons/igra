@@ -32,7 +32,7 @@ public class DoorKey : MonoBehaviour
     {
         if (inTrigger)
         {
-            GUI.Box(new Rect(0, 60, 200, 25), "Это не ключ");
+            GUI.Box(new Rect(400, 80, 200, 25), "Нажмите E чтобы взять ключ");
         }
     }
 }
