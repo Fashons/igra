@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class TimeDestroy : MonoBehaviour
+public class TimeСhange : MonoBehaviour
 {
     public float StartTime;
     public float EndTime;
@@ -11,9 +12,9 @@ public class TimeDestroy : MonoBehaviour
     {
         StartTime += 1f * Time.deltaTime;
 
-        if(StartTime >= EndTime)
+        if (StartTime >= EndTime)
         {
-            Destroy(gameObject);
+            GetComponent<Text>().text = "Давай я научу тебя играть";
         }
     }
 }
